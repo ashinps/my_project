@@ -4,14 +4,14 @@ class Room {
   double? roomArea;
   String? acMachine;
 
-  void setData(int no, String type, double area, String ac) {
+    setData(int no, String type, double area, String ac) {
     roomNo = no;
     roomType = type;
     roomArea = area;
     acMachine = ac;
   }
 
-  void displayData() {
+    displayData() {
     print('Room Number: $roomNo');
     print('Room Type: $roomType');
     print('Room Area: $roomArea square units');
@@ -19,8 +19,8 @@ class Room {
   }
 }
 
-void main() {
-  Room myRoom = Room();
+  main() {
+  var myRoom = Room();
   myRoom.setData(101, 'Bedroom', 200, 'off');
   myRoom.displayData();
 }
